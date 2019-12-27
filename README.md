@@ -32,10 +32,13 @@ make docs
 ```
 if your main Makefile defers tasks to `Makefile.coq`.
 
+Finally, push your `docs` directory and enable GitHub Pages for
+your project (under Settings).
+
 ## Files
 
 - [`Makefile.coq.local`](Makefile.coq.local): Makefile tasks for generating GitHub-friendly documentation
 - [`config.js`](resources/config.js): contains the unicode replacement table
 - [`coqdoc.css`](resources/coqdoc.css): a replacement for the default coqdoc CSS style. Can be removed to use the default style
-- [`coqdocjs.js`](resources/coqdocjs.js) and [coqdocjs.css](extra/resources/coqdocjs.css): the script rewriting the DOM and adding the dynamic features with a corresponding CSS style
+- [`coqdocjs.js`](resources/coqdocjs.js) and [`coqdocjs.css`](extra/resources/coqdocjs.css): the script rewriting the DOM and adding the dynamic features with a corresponding CSS style
 - [`header.html`](resources/header.html) and [`footer.html`](resources/footer.html): custom header and footer files used in every generated html file
