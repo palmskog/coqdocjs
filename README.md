@@ -10,11 +10,12 @@ The results of using the scripts can be seen here: https://coq-community.github.
 
 The scripts provide the following features:
 - Customizable Unicode display:
+  * It only changes the display; copy-paste from the HTML produces pure ASCII
   * It only replaces complete identifiers or notation tokens, possibly terminated by numbers or apostrophes
-  * It does not replace randomly, like in "omega." or "tauto."
+  * It does not replace randomly, e.g., in `omega` or `tauto`
   * To add new symbols, edit [config.js](resources/config.js)
 - Proof hiding:
-  * All proofs longer than one line are hidden by default. They can be uncovered by clicking on "Proof...".
+  * All proofs longer than one line are hidden by default. They can be uncovered by clicking on `Proof`.
 
 All of this works with the ordinary coqdoc by configuring it to use a custom header
 file including the required JavasScript code and some custom CSS.
